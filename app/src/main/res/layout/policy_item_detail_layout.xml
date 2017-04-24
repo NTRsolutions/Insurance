@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <RelativeLayout
+        android:id="@+id/front_body_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <include
+            android:id="@+id/toolbar_id_policy_item_detail_layout"
+            layout="@layout/toolbar_layout" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/heading_policy_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar_id_policy_item_detail_layout"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="3dp"
+            app:cardBackgroundColor="@color/gray"
+            card_view:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.pkmmte.circularimageview.CircularImageView
+                    android:id="@+id/basic_imageView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/basic_imageView"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/basic_info_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="Car list 1 "
+                        android:textColor="@color/big_text_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/basic_info_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/basic_info_title"
+                        android:text="@string/easy_manage"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tab_buttom_layout"
+            android:layout_below="@+id/heading_policy_layout"
+            android:layout_centerInParent="true">
+
+            <GridView
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="7dp"
+                android:numColumns="2"
+                android:padding="4dp"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="6dp" />
+            />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+<android.support.design.widget.FloatingActionButton
+        android:id="@+id/floating_button_policy_detail_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/call_icon"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_anchorGravity="bottom|right|end"
+        app:rippleColor="@android:color/white" />
+
+</android.support.design.widget.CoordinatorLayout>
+

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/cardview_light_background">
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background">
+<include layout="@layout/toolbar_layout"
+    android:id="@+id/toolbar_in_contact_page"/>
+    <android.support.v7.widget.CardView
+        android:id="@+id/heading_call_us_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_in_contact_page"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardElevation="3dp"
+        card_view:cardBackgroundColor="@color/gray"
+        card_view:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:padding="5dp"
+        android:id="@+id/call_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/text_layout"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call us anytime!!"
+                android:textColor="@color/big_text_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="We are always ready for u, custer satisfaction"
+                android:textSize="16sp" />
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/call_us_floating_button"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/call_icon"
+                app:rippleColor="@android:color/white"
+                android:background="@color/colorAccent"
+                app:backgroundTint="@color/colorAccent" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/heading_ask_us_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading_call_us_layout"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardElevation="3dp"
+        card_view:cardBackgroundColor="@color/gray"
+        card_view:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:padding="5dp"
+        android:id="@+id/edit_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/ask_us_text"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ask Us"
+            android:textColor="@color/big_text_color"
+            android:textSize="20sp" />
+            <EditText
+                android:id="@+id/ask_type_here"
+                android:layout_below="@+id/ask_us_text"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:hint="type here"/>
+
+
+
+        <TextView
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/ask_type_here"
+            android:id="@+id/send_contact"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:textStyle="bold"
+            android:textColor="@color/big_text_color"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:src="@drawable/get_started"
+        android:id="@+id/demo_image"
+        android:layout_marginBottom="25dp"/>
+    <LinearLayout
+       android:gravity="center_horizontal"
+        android:layout_below="@+id/demo_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_started"
+            android:textColor="@color/big_text_color"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/get_started_desc"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/ready_button"
+            android:layout_marginTop="15dp"
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:background="@drawable/rectangular_shape"
+            android:text="@string/ready"/>
+    </LinearLayout>
+        </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/cardview_light_background">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Skip intro"
+            android:textColor="@color/big_text_color"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</RelativeLayout>

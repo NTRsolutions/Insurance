@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardElevation="1dp"
+    android:id="@+id/cardView"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="5dp"
+    card_view:cardBackgroundColor="@color/gray"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/all_info_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:id="@+id/list_one_layout_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+            <TextView
+                android:id="@+id/high_light_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Featured"
+                android:layout_marginLeft="15dp"
+                android:textColor="#ffffff"
+                android:background="@android:color/holo_orange_light"
+                android:layout_marginBottom="3dp"
+                />
+
+            <LinearLayout
+                android:layout_below="@+id/high_light_text"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/policy__title_name_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Car list 1 "
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/big_text_color"
+                    android:layout_marginBottom="3dp"/>
+
+                <TextView
+                    android:layout_below="@+id/policy__title_name_item"
+                    android:id="@+id/policy_description_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/easy_manage" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

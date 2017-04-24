@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/tool_bar_in_calculate_premium_profile_detail_page"/>
+    <TextView
+        android:id="@+id/policy_term_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=" Personal Details"
+        android:textColor="@color/big_text_color"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tool_bar_in_calculate_premium_profile_detail_page"/>
+    <ScrollView
+        android:layout_below="@+id/policy_term_text"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="110dp">
+
+    <android.support.v7.widget.CardView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="1dp"
+        android:id="@+id/cardView"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/policy_term_layout"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/first_name"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="Bulbul Hasan"
+                    android:textColor="@color/big_text_color"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/hint_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" first name"
+                    android:alpha="0.5"
+                    android:textSize="16sp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/last_name"
+                        android:layout_height="wrap_content"
+                        android:text="Babul"
+                        android:textColor="@color/big_text_color"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/hlast_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" last name"
+                        android:alpha="0.5"
+                        android:textSize="16sp" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp">
+                        <TextView
+                            android:layout_alignParentLeft="true"
+                            android:id="@+id/gender"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:textColor="@color/big_text_color"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content" />
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/hgender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" gender"
+                            android:alpha="0.5"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/email_id"
+                        android:layout_height="wrap_content"
+                        android:text="babul.sust.cse@gmail.com"
+                        android:textColor="@color/big_text_color"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/hemail_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" mail"
+                        android:alpha="0.75"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/mobile_number"
+                        android:layout_height="wrap_content"
+                        android:text="+880170922334"
+                        android:textColor="@color/big_text_color"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/hmobile_no"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mobile"
+                        android:alpha="0.5"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/country_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="Bangladesh"
+                        android:textColor="@color/big_text_color"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/hcountry_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:alpha="0.5"
+                        android:gravity="center"
+                        android:text="country"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/address"
+                        android:layout_height="wrap_content"
+                        android:text="nikujo-2. khilkhet Dhaka"
+                        android:textColor="@color/big_text_color"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/h_address"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:alpha="0.5"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/maritual_status"
+                    android:layout_height="wrap_content"
+                    android:text="Single"
+                    android:textColor="@color/big_text_color"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/hmaritual_status"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" gender"
+                    android:alpha="0.5"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content"
+                        android:text="Single"
+                        android:textColor="@color/big_text_color"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" gender"
+                        android:alpha="0.5"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content"
+                        android:text="Single"
+                        android:textColor="@color/big_text_color"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" gender"
+                        android:alpha="0.5"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content"
+                        android:text="Single"
+                        android:textColor="@color/big_text_color"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" gender"
+                        android:alpha="0.5"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+        </ScrollView>
+    <android.support.v7.widget.CardView
+        android:layout_above="@+id/bottom_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="1dp"
+        android:id="@+id/card_view_next"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="3dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/payment_term_layout">
+            <RadioButton
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" I agree Terms and Conditions"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+        <Button
+            android:id="@+id/calculate_premium_button_profile_page"
+            android:background="@drawable/rectangular_blue_shape"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Calculate Premium"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            />
+    </RelativeLayout>
+</RelativeLayout>

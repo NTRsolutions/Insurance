@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="#ffffff">
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/toolbar_id_faq_details_page"/>
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/toolbar_id_faq_details_page"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardElevation="2dp"
+        android:id="@+id/cardView"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/gray"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@color/big_text_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/faq_details_id_page_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is faq heading "/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/faq_details_id_page_heading"
+        android:id="@+id/faq_setails_id_page_txview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="this is faq page..  here u can see of the faq information which iscome from server. now given dummy tex;"/>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floating_button_in_faq_details_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/call_icon"
+        app:rippleColor="@android:color/white"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_anchorGravity="bottom|right|end" />
+</android.support.design.widget.CoordinatorLayout>

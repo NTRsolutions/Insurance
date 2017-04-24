@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/cardview_light_background">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/toolbar_id_claim_page"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/toolbar_id_claim_page"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="1dp"
+        android:id="@+id/cardView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        card_view:cardBackgroundColor="@color/gray"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+    <TextView
+        android:id="@+id/heading_text_claim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/claim_heading_text"
+        android:textColor="@color/big_text_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/claim_body_text"
+        android:layout_below="@+id/heading_text_claim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/claim_body_text"
+        android:layout_alignParentLeft="true"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cardView"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                card_view:cardBackgroundColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_weight="1"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="15dp"
+                card_view:cardElevation="1dp"
+                android:id="@+id/cardView_claims_checklist"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <RelativeLayout
+                    android:id="@+id/check_relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/check_list_image_claims_page"
+                        android:layout_height="100dp"
+                        android:background="@color/gray"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/profile_home"/>
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:layout_below="@+id/check_list_image_claims_page"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Claims Check List"
+                        android:textColor="@color/big_text_color"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                card_view:cardBackgroundColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="15dp"
+                card_view:cardElevation="1dp"
+                android:id="@+id/cardView_faq"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <RelativeLayout
+                    android:id="@+id/faq_claims_relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/faq_image_claims_page"
+                        android:layout_height="100dp"
+                        android:background="@color/gray"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/claims"/>
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:layout_below="@+id/faq_image_claims_page"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FAQ"
+                        android:textColor="@color/big_text_color"/>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floating_claim_service_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/call_icon"
+        app:rippleColor="@android:color/white"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_anchorGravity="bottom|right|end" />
+    </android.support.design.widget.CoordinatorLayout>

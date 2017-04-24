@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/tool_bar_in_update_profile_page"/>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar_in_update_profile_page">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="15dp"
+                card_view:cardElevation="1dp"
+                android:id="@+id/cardView"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/policy_term_layout"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/first_name"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:hint="Type Of Insurance"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent" />
+
+                        <EditText
+                            android:id="@+id/last_name"
+                            android:layout_height="wrap_content"
+                            android:hint="Riders Rider"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent" />
+
+                        <EditText
+                            android:id="@+id/gender"
+                            android:layout_height="wrap_content"
+                            android:hint="Rider Premium"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent" />
+                        <EditText
+                            android:id="@+id/date_of_birth"
+                            android:layout_height="wrap_content"
+                            android:hint="Plicy Name"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent" />
+
+                        <EditText
+                            android:id="@+id/email_id"
+                            android:layout_height="wrap_content"
+                            android:hint="Premium "
+                            android:textSize="18sp"
+                            android:layout_width="match_parent" />
+                        <EditText
+                            android:id="@+id/phone_number"
+                            android:layout_height="wrap_content"
+                            android:hint="Coverage"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent" />
+
+                        <EditText
+                            android:id="@+id/smoke_edittxv"
+                            android:layout_height="wrap_content"
+                            android:hint="Premium Term"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent" />
+                        <EditText
+                            android:id="@+id/country_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Date Of Incpetiony"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/address"
+                            android:layout_height="wrap_content"
+                            android:hint="Date Of Termination"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent" />
+
+                        <EditText
+                            android:id="@+id/occupation"
+                            android:layout_height="wrap_content"
+                            android:hint="Insurar Comapny"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent" />
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:hint="Death"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent" />
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:hint="Early Critical Illness"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent" />
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:hint="Critical Illness"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent" />
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:hint="accidental Death"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent" />
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:hint="Diaability Income"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/policy_term_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:text=" Policy Details"
+                    android:textColor="@color/big_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

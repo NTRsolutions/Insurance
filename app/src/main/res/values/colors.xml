@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="big_text_color">#115BED</color>
+    <color name="switch_circle_color">#09C101</color>
+    <color name="gray">#F7F8FC</color>
+    <color name="grid_item_color">#F7F8FC</color>
+    <color name="grid_layout_color">#FFFFFF</color>
+
+    <color name="pager_dark_asking">#29EEff</color>
+    <!-- dots active colors -->
+    <color name="pager_light_screen1">#f98da5</color>
+    <color name="pager_light_screen2">#8cf9eb</color>
+    <color name="pager_light_screen3">#93c6fd</color>
+    <color name="pager_light_asking">#2fffff</color>
+    <color name="pager_login_page">#2fffff</color>
+    <array name="array_pager_active">
+
+</array>
+<array name="array_pager_inactive">
+    <item>@color/pager_dark_asking</item>
+    <item>@color/pager_login_page</item>
+</array>
+    </resources>

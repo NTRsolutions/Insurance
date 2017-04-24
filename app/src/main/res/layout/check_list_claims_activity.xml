@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/tool_bar_in_checklist_page"/>
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/tool_bar_in_checklist_page"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="1dp"
+        android:id="@+id/cardView_checklist"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        card_view:cardBackgroundColor="@color/gray"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/sum_assured_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" CheckList !"
+                android:textColor="@color/big_text_color"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <SeekBar
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/sum_assured_text"
+                android:id="@+id/amount_seek_bar_in_premium_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="200"
+                android:progress="80" />
+            <TextView
+                android:id="@+id/amount_seek_bar_value"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/amount_seek_bar_in_premium_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="U  are 70% eligible"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/cardView_checklist"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="1dp"
+        android:id="@+id/card_view_next"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio_button_chek1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" radio selection 1"
+                android:textSize="18sp"
+                />
+            <RadioButton
+                android:layout_below="@+id/radio_button_chek1"
+                android:id="@+id/radio_button_chek2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  radio selection 2"
+                android:textSize="18sp"
+                />
+            <RadioButton
+                android:layout_below="@+id/radio_button_chek2"
+                android:id="@+id/radio_button_chek3"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" radio selection 3"
+                android:textSize="18sp"
+                />
+            <RadioButton
+                android:layout_below="@+id/radio_button_chek3"
+                android:id="@+id/radio_button_chek4"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  radio selection 4"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/done_button"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+        <Button
+            android:id="@+id/process_button_premimum_page"
+            android:background="@drawable/rectangular_blue_shape"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

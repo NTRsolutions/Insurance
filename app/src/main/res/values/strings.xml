@@ -1,0 +1,50 @@
+<resources>
+    <string name="facebook_app_id">705237016303620</string>
+    <string name="app_name">Insurance</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">Start Now</string>
+    <string name="easy_manage">Easy To Manage!</string>
+    <string name="easy_description">The easiest way to keep in touch with your Friends!</string>
+    <string name="my_profile">My Profle</string>
+    <string name="my_profile_des">Sticker is best way then long text!</string>
+    <string name="application_manager">Application Manager</string>
+    <string name="application_man_description">Track Your Application and Its progress</string>
+    <string name="hello_there">Hello There </string>
+    <string name="hello_there_des">Have we Met Before ?</string>
+    <string name="get_started">Get Started </string>
+    <string name="get_started_desc">Make group of best buddies and have fun!</string>
+    <string name="home_desc">make friends and have fun.</string>
+    <string name="yes">Yes</string>
+    <string name="login"> Login</string>
+    <string name="forget">Foget Password</string>
+    <string name ="sure">Sure</string>
+    <string name="not_yet">Not Yet</string>
+    <string name="ready"> Yes I am Ready!</string>
+    <string name="welcome_back"> Welcome Back!</string>
+    <string name="welcome_enter_details"> Please enter your details below!</string>
+    <string name="nice_to_meet">Nice To Meet You</string>
+    <string name="nice_to_meet_details">To keep your data save we have
+    to create a personal account</string>
+    <string name="lets_start">Lets Start Then !</string>
+    <string name="great"> Great!</string>
+    <string name="done"> Done</string>
+    <string name="almost_done"> Al Most Done!</string>
+    <string name="almost_done_details"> Please Read and Accept Our Terms and Coditions</string>
+    <string name="easy_manage_des"> Buy Manage Tracks and Review Insurance policies</string>
+
+    <!--profile page-->
+    <string name="profile_basic_info">Basic Information</string>
+    <string name="profile_personal_info"> Personal Information</string>
+    <string name="profile_medications"> Medications</string>
+    <string name="profile_allergies"> Allergies</string>
+    <string name="profile_link_to_apple_health">Link to Apple Health</string>
+
+    <string name="claim_heading_text">Claims and service </string>
+    <string name="claim_body_text"> Thats why nobody can use the app for the purpose due to copy rght ussues</string>
+    <string name = "claim_footer_text">this foter of climas and service</string>
+    <string name="options">Choose Profile Image</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Click here to open Gallary</string>
+</resources>

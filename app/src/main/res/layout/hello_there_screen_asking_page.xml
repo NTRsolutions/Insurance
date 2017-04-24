@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<FrameLayout
+    android:name="com.insurance.bluescheme.insurance.login.HelloThereFragment"
+    android:id="@+id/hello_there_fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+<RelativeLayout
+    android:id="@+id/tab_buttom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_alignParentBottom="true">
+
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/bottom_app_logo"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <ImageView
+        android:src="@drawable/home_button"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+     />
+    </RelativeLayout>
+</RelativeLayout>

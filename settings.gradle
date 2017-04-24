@@ -1,0 +1,1 @@
+include ':app', ':infinitecycleviewpager', ':circularImageView', ':simple-crop-image-lib'

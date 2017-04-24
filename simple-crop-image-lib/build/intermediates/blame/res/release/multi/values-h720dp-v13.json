@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\Users\\tonmoybarua\\AndroidStudioProjects\\Insurance\\simple-crop-image-lib\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 66,
+                    "endOffset": 117
+                },
+                "from": {
+                    "file": "C:\\Users\\tonmoybarua\\.android\\build-cache\\11bc3458d51b5cd7694da548853807db5a68a398\\output\\res\\values-h720dp\\values-h720dp.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 283,
+                        "endColumn": 66,
+                        "endOffset": 345
+                    }
+                }
+            }
+        ]
+    }
+]

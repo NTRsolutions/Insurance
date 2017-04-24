@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/tool_bar_in_calculate_premium_year_page"/>
+    <RelativeLayout
+        android:layout_below="@+id/tool_bar_in_calculate_premium_year_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/policy_term_layout">
+        <android.support.v7.widget.CardView
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="15dp"
+            android:layout_margin="10dp"
+            card_view:cardElevation="1dp"
+            android:id="@+id/cardView">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/policy_term_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Policy Terms"
+                android:textColor="@color/big_text_color"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view_term_list"/>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/cardView"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="15dp"
+            android:layout_margin="10dp"
+            card_view:cardElevation="1dp"
+            android:id="@+id/card_View">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/payment_term_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Payment Terms"
+            android:textColor="@color/big_text_color"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view_payment_term">
+    </android.support.v7.widget.RecyclerView>
+        </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+        <Button
+            android:id="@+id/process_button_premium_year_layout"
+            android:background="@drawable/rectangular_blue_shape"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Procced"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+   <!-- <android.support.v7.widget.CardView android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="1dp"
+        android:id="@+id/cardView"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_below="@+id/tool_bar_in_calculate_premium_year_page"
+        android:layout_alignLeft="@+id/card_view_next"
+        android:layout_alignStart="@+id/card_view_next">
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/policy_term_layout"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/policy_term_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Policy Terms"
+                android:textColor="@color/big_text_color"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/policy_term_text"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:id="@+id/five_years"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text=" 5 years"
+                android:textColor="@color/big_text_color"
+                android:textSize="18sp"
+                android:background="@drawable/circle_shape"
+                android:layout_width="wrap_content" />
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:id="@+id/ten_years"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" 10 years"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="18sp"
+                android:background="@drawable/circle_shape_blue" />
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:id="@+id/twenty_years"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" 20 years"
+                android:textColor="@color/big_text_color"
+                android:textSize="18sp"
+                android:background="@drawable/circle_shape" />
+
+            <TextView
+                android:id="@+id/others"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/circle_shape"
+                android:gravity="center"
+                android:text=" Others"
+                android:textColor="@color/big_text_color"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/cardView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="1dp"
+        android:id="@+id/card_view_next"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/payment_term_layout"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/payment_term_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Payment Term"
+                android:textColor="@color/big_text_color"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/payment_term_text"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:id="@+id/one_time"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:text=" One Time"
+                    android:textColor="@color/big_text_color"
+                    android:textSize="18sp"
+                    android:background="@drawable/circle_shape"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:id="@+id/two_time"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=" Two time"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18sp"
+                    android:background="@drawable/circle_shape_blue"/>
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:id="@+id/third_time"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=" 3'rd Time"
+                    android:textColor="@color/big_text_color"
+                    android:textSize="18sp"
+                    android:background="@drawable/circle_shape" />
+                <TextView
+                    android:id="@+id/others_time"
+                    android:background="@drawable/circle_shape"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=" Others Time"
+                    android:layout_weight="1"
+                    android:textColor="@color/big_text_color"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+        <Button
+            android:id="@+id/process_button_premium_year_layout"
+            android:background="@drawable/rectangular_blue_shape"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Procced"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+--></RelativeLayout>

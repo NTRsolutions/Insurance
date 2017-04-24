@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.insurance.bluescheme.insure">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name="com.insurance.bluescheme.insure.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.insurance.bluescheme.insure.activity.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.AppIntroActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.login.HelloThereActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.activity.HomeActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.home_activity.BuyPolicyActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.home_activity.PolicyRenewelActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.home_activity.MyPolicyActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.home_activity.NotificationActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.home_activity.ClaimsActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.home_activity.ProfileActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.activity.InsuranceListTypeActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.activity.PolicyDetailActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.insurance_feature_activity.FaqDetailsActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.insurance_feature_activity.FAQActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.insurance_feature_activity.CalculatorPremiumActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.insurance_feature_activity.ClaimsServiceActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.insurance_feature_activity.PlanBruchureActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.insurance_feature_activity.RecomandedPlanActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.insurance_feature_activity.ContactSupportActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.insurance_feature_activity.CalCulateYearTermsActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.insurance_feature_activity.CalculatePremiumProfileActivity"/>
+        <activity android:name=".activity.HomeMenuActivity"/>
+        <activity android:name=".activity.UpdateProfileActivity"/>
+        <activity android:name=".activity.ChangeMobileNumberActivity"/>
+        <activity android:name=".activity.ChangePasswordActivity"/>
+        <activity android:name=".activity.NotificationSettingsActivity"/>
+        <activity android:name=".home_activity.CheckListActivity"/>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+        <provider android:authorities="com.facebook.app.FacebookContentProvider148851038810437"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+    </application>
+
+
+</manifest>

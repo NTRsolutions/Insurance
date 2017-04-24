@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/text_laout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Great "
+            android:textColor="@color/big_text_color"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Lets Start Then !"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp"/>
+        <EditText
+            android:id="@+id/email_id_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="email"
+            android:inputType="text"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/password_sign_up"
+            android:hint="password"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/great_done_button"
+            android:background="@drawable/rectangular_shape"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/done"/>
+
+    </LinearLayout>
+</RelativeLayout>
