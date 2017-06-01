@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_key_protection_select_page"
+        layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/toolbar_key_protection_select_page"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/key_protection_heading_layout"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <Button
+                android:layout_margin="5dp"
+                android:id="@+id/death_button"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangular_shape"
+                android:gravity="center"
+                android:text="Death" />
+
+
+            <TextView
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                android:layout_toRightOf="@+id/death_button"
+                android:id="@+id/total_premium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Total Premium : $360/Annum"/>
+
+
+            <Button
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/death_button"
+                android:text="details"
+                android:id="@+id/edit_policy"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/rectangular_shape"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                />
+            <Button
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/edit_policy"
+                android:text="select"
+                android:id="@+id/delete_profile_image_text_details"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/rectangular_shape"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                />
+            <com.pkmmte.circularimageview.CircularImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/icon"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/profile_img" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <Button
+                android:layout_margin="5dp"
+                android:id="@+id/critical_illness_button"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangular_shape"
+                android:gravity="center"
+                android:text="Critical illness" />
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/critical_illness_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     />
+
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                   />
+
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                   />
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <Button
+                android:layout_margin="5dp"
+                android:id="@+id/disability_button"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangular_shape"
+                android:gravity="center"
+                android:text="Disability income" />
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/disability_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                     />
+
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+
+            <Button
+                android:layout_margin="5dp"
+                android:id="@+id/health_care_button"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangular_shape"
+                android:gravity="center"
+                android:text="Health care" />
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/health_care_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                     />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

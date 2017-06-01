@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:paddingLeft="30dp"
+        android:id="@+id/hello_in_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Hello, "
+        android:gravity="center_vertical"
+        android:textSize="17sp"
+        android:textColor="#000000"/>
+    <TextView
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/hello_in_text"
+        android:id="@+id/u_are_in_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are in !  "
+        android:gravity="center_vertical"
+        android:textSize="17sp"
+        android:textColor="#000000"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+    <TextView
+        android:padding="30dp"
+        android:id="@+id/have_we_meet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="I get smarter the more you tell me, So I am going to ask a few more details that will help me  "
+        android:gravity="center_vertical"
+        android:textSize="17sp"
+        android:textColor="#000000"/>
+
+
+
+
+        <Button
+            android:id="@+id/yes_hello_page"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rectangular_shape"
+            android:text="@string/yes"
+            android:textSize="14sp"
+            android:layout_below="@+id/have_we_meet"/>
+
+
+</RelativeLayout>
+    </RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/toolbar_id_alert_details_page"/>
+    <RelativeLayout
+        android:id="@+id/heading_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/toolbar_id_alert_details_page"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@color/big_text_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/alert_details_id_page_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is faq heading "/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/alert_details_id_page_heading"
+        android:id="@+id/alert_details_id_page_txview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="this is faq page..  here u can see of the faq information which iscome from server. now given dummy tex;"/>
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/assured_layout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangular_shape"
+            android:layout_below="@+id/heading_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/term_assured_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Term Assured !"
+                android:textColor="#000000" />
+            <TextView
+                android:layout_below="@+id/term_assured_text"
+                android:gravity="center_horizontal"
+                android:id="@+id/sum_assured_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Sum Assured $500 $400/year"
+                android:textColor="#000000"
+                />
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/question_mark_image"/>
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/inital_value"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/profile_img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/assured_layout"
+        android:id="@+id/selct_advisor_textview"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a financial Advisor you would like to contact with him"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        />
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        android:layout_below="@+id/selct_advisor_textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="52dp">
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pager"
+            />
+    </RelativeLayout>
+
+   </RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="HOME"
+            android:icon="@drawable/home_drawer_image"
+            />
+        <item
+            android:id="@+id/account"
+            android:title="MY ACCOUNT"
+            android:icon="@drawable/profile_drawer_image"/>
+        <item
+            android:id="@+id/setting"
+            android:title="SETTINGS"
+            android:icon="@drawable/add_wiifi_drawer_image"/>
+        <item
+            android:id="@+id/remainder"
+            android:title="REMAINDER"
+            android:icon="@drawable/pending_list_drawer_image"/>
+        <item
+            android:id="@+id/privacy"
+            android:title="PRIVACY POLICY"
+            android:icon="@drawable/update_pass_drawer_image"/>
+        <item
+            android:id="@+id/term_of_user"
+            android:title="TERM OF USE"
+            android:icon="@drawable/update_pass_drawer_image"/>
+        <item
+            android:id="@+id/logout"
+            android:title="LOGOUT"
+            android:icon="@drawable/logout_drawer_image"/>
+    </group>
+</menu>

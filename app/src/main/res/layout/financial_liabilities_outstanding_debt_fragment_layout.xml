@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/financial_asset_cpf_savings_describes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="How much Outstanding debt  ?"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/button_option_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/financial_asset_cpf_savings_describes">
+
+        <Button
+            android:id="@+id/under_gdp_button"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/rectangular_shape"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="SGDO" />
+
+        <Button
+            android:id="@+id/one_thousand"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/under_gdp_button"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangular_shape"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="$0 - 10000$" />
+
+        <Button
+            android:id="@+id/one_to_three_thousand_button"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/one_thousand"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangular_shape"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="$10001 - $30000" />
+
+        <Button
+            android:id="@+id/three_to_five_thousand_button"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/one_to_three_thousand_button"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangular_shape"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="$30001 - $50000" />
+        <Button
+            android:id="@+id/five_to_eight_thousand_button"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/three_to_five_thousand_button"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangular_shape"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="$50001 - $80000" />
+
+        <Button
+            android:id="@+id/eight_to_ten_thousand_button"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/five_to_eight_thousand_button"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangular_shape"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="$80001 - $100000" />
+        <Button
+            android:id="@+id/ten_thousand_plus_button"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/eight_to_ten_thousand_button"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangular_shape"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="$100000 +" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

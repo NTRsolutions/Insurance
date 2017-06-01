@@ -16,26 +16,44 @@
         android:roundIcon="@mipmap/app_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.insurance.bluescheme.insure.activity.SplashScreenActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name="com.insurance.bluescheme.insure.activity.LandingActivity">
         </activity>
+
+        <activity android:name=".activity.drawer_item.TermPolicyActivity"/>
+        <activity android:name=".activity.drawer_item.InviteFriendActivity"/>
+        <activity android:name=".activity.drawer_item.NotificationsActivity"/>
+        <activity android:name=".activity.drawer_item.AlertsActivity"/>
+        <activity android:name=".activity.drawer_item.AccountActivity"/>
+        <activity android:name=".activity.drawer_item.SupportsActivity"/>
+        <activity android:name=".activity.drawer_item.SettingsActivity"/>
+        <activity android:name=".activity.ShareFriendSubmitActivity"/>
+        <activity android:name=".activity.drawer_item.AgentMessageBoxActivity"/>
+        <activity android:name=".activity.drawer_item.PassCodeActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan"/>
+        <activity android:name=".activity.drawer_item.AgentSelectActivity"/>
+        <activity android:name=".activity.drawer_item.PrefferAdvisorActivity"/>
+        <activity android:name=".activity.SplashScreenActivity"/>
         <activity android:name=".activity.MainActivity"/>
         <activity android:name=".activity.AppIntroActivity"/>
-        <activity android:name="com.insurance.bluescheme.insure.login.HelloThereActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.login.FirstPageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+        <activity android:name=".login.ForgetPasswordActivity"/>
+        <activity android:name=".login.LoginActivity">
+        </activity>
+
         <activity android:name="com.insurance.bluescheme.insure.activity.HomeActivity"/>
         <activity android:name="com.insurance.bluescheme.insure.home_activity.BuyPolicyActivity"/>
         <activity android:name="com.insurance.bluescheme.insure.home_activity.PolicyRenewelActivity"/>
         <activity android:name="com.insurance.bluescheme.insure.home_activity.MyPolicyActivity"/>
         <activity android:name="com.insurance.bluescheme.insure.home_activity.NotificationActivity"/>
         <activity android:name="com.insurance.bluescheme.insure.home_activity.ClaimsActivity"/>
-        <activity android:name="com.insurance.bluescheme.insure.home_activity.ProfileActivity"/>
-        <activity android:name="com.insurance.bluescheme.insure.activity.InsuranceListTypeActivity"/>
+        <activity android:name="com.insurance.bluescheme.insure.activity.drawer_item.ProfileActivity"/><!--
+        --><activity android:name="com.insurance.bluescheme.insure.activity.InsuranceListTypeActivity"/>
         <activity android:name="com.insurance.bluescheme.insure.activity.PolicyDetailActivity"/>
-        <activity android:name="com.insurance.bluescheme.insure.insurance_feature_activity.FaqDetailsActivity"/>
         <activity android:name="com.insurance.bluescheme.insure.insurance_feature_activity.FAQActivity"/>
         <activity android:name="com.insurance.bluescheme.insure.insurance_feature_activity.CalculatorPremiumActivity"/>
         <activity android:name="com.insurance.bluescheme.insure.insurance_feature_activity.ClaimsServiceActivity"/>
@@ -48,9 +66,13 @@
         <activity android:name=".activity.UpdateProfileActivity"/>
         <activity android:name=".activity.ChangeMobileNumberActivity"/>
         <activity android:name=".activity.ChangePasswordActivity"/>
-        <activity android:name=".activity.NotificationSettingsActivity"/>
         <activity android:name=".home_activity.CheckListActivity"/>
+        <activity android:name=".vault.PolicyDetailsActivity"/>
+        <activity android:name=".vault.OverViewActivity"/>
+        <activity android:name=".vault.InsuranceOptionShowingFragment"/>
+        <activity android:name=".insurance_feature_activity.AlertsDetailsActivity"/>
         <activity android:name="com.facebook.FacebookActivity"
+
             android:configChanges=
                 "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
@@ -59,6 +81,29 @@
             android:name="com.facebook.FacebookContentProvider"
             android:exported="true" />
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <!--advisor activity-->
+        <activity android:name=".advisor.general.GeneralFragment"/>
+        <activity android:name=".advisor.general.ChildrenFragment"/>
+        <activity android:name=".advisor.general.MaritualStatusFragment"/>
+        <activity android:name=".advisor.general.HowManyChildrenFragment"/>
+
+        <!--lifeStyle activity-->
+        <activity android:name=".advisor.life_style.LifeStyleFragment"/>
+        <activity android:name=".advisor.life_style.InvestmentFragment"/>
+        <activity android:name=".advisor.life_style.HowManyInvestmentFragment"/>
+        <activity android:name=".advisor.life_style.OwnReleaseFragment"/>
+
+        <!--financial assests-->
+        <activity android:name=".advisor.finan_asset.AssestCPFFragment"/>
+        <activity android:name=".advisor.finan_asset.AnnualIncomeFragment"/>
+        <activity android:name=".advisor.finan_asset.AssetRentalInvestmentFragment"/>
+        <activity android:name=".advisor.finan_asset.SavingsFragment"/>
+        <!-- financial liabilities-->
+        <activity android:name=".advisor.finan_liabilities.CarLoanFragment"/>
+        <activity android:name=".advisor.finan_liabilities.CreditCardDebtFragment"/>
+        <activity android:name=".advisor.finan_liabilities.MortgageFragment"/>
+        <activity android:name=".advisor.finan_liabilities.FinancialSupportDepencyfragment"/>
+        <activity android:name=".advisor.finan_liabilities.OtherOutStandingdebtFragment"/>
     </application>
 
 
